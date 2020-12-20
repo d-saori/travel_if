@@ -6,6 +6,13 @@ products = [
   {name: "なす", price: 400}
 ]
 
+# 定数を設定。ここでの変更がコード全体に反映される
+FIRST_PRODUCT_NUM = 31 # 表示する最初の商品の番号(変更可)
+LAST_PRODUCT_NUM = (FIRST_PRODUCT_NUM + products.size) - 1 # 表示する最後の商品の番号（変更不可）
+DISCOUNT_STANDARD_VALUE = 5 # 割引気を適用する個数の基準値(変更可)
+DISCOUNT_RATE = 0.1 # 割引率(変更可)
+AFTER_DISCOUNT_RATE = 1 - DISCOUNT_RATE # 割引後の本体価格の割合(変更可)
+
 # 商品を表示
 puts "いらっしゃいませ!商品を選んで下さい。"
 puts
